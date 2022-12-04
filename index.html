@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>CSS Template</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+
+box-sizing: border-box;
+
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+
+header {
+
+background-color: #666;
+
+padding: 30px;
+
+text-align: center;
+
+font-size: 35px;
+
+color: purple;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+
+float: left;
+
+width: 30%;
+
+height: 300px; /* only for demonstration, should be removed */
+
+background: #ccc;
+
+padding: 20px;
+
+}
+
+/* Style the list inside the menu */
+
+nav ul {
+
+list-style-type: none;
+
+padding: 0;
+
+}
+
+article {
+
+float: left;
+
+padding: 20px;
+
+width: 70%;
+
+background-color: purple;
+
+height: 600px; /* only for demonstration, should be removed */
+
+}
+
+/* Clear floats after the columns */
+
+section::after {
+
+content: "";
+
+display: table;
+
+clear: both;
+
+}
+
+/* Style the footer */
+
+footer {
+
+background-color: #777;
+
+padding: 10px;
+
+text-align: center;
+
+color: pink;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+<h3>Blazerette&copy;</h3>
+
+</header>
+
+<section>
+
+<nav>
+
+<ul>
+
+<li><a href="about.html">Who We Are</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="awards.html">Awards</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</nav>
+
+<article>
+<h1 style="color:pink;"> Welcome to Blazerette</h1>
+
+<p style="color:skyblue;">Blazerette is an affordable retail business that specializes in work attire for women. From blazers to loafers, Blazerette has it all.</p>
+<h1 style="color:pink;">Mission Statement</h1>
+
+<p style="color:skyblue;">Creating affordable professional attire for women entering the workforce.</p>
+
+<p style="color:skyblue;">Ensure that women have the proper attire at a friendly budget since professional attire tends to get pricey.</p>
+
+<p style="color:skyblue;"> We connect with college students by hosting pop-ups on campus to promote our company & network with potential clientele. <p>
+
+<img src="thumbnail_BlazeretteLogo.jpg" width="400", height="175">
+
+</article>
+
+</section>
+
+<footer>
+
+<p>Thanks for shopping with us!</p>
+
+</footer>
+
+</body>
+
+</html>

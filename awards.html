@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+background-color: #FCD7FF;
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: purple;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+float: left;
+width: 30%;
+height: 300px; /* only for demonstration, should be removed */
+background: #ccc;
+padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+article {
+float: left;
+padding: 20px;
+width: 70%;
+background-color: purple;
+height: 700px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the footer */
+
+footer {
+
+background-color: #777;
+
+padding: 10px;
+
+text-align: center;
+
+color: pink;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 style="color:#9F50A6;"> Awards and Future Goals</h1>
+
+
+<section>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">Who We Are</a></li>
+
+<li><a href="#">Products</a></li>
+
+<li><a href="awards.html">Awards</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</nav>
+
+<article>
+
+<h1 style="color:#EA88C0;">Awards</h1>
+
+<p style="color:#EA88C0;">Winner of the Craft and Italian Artisanship Award</p>
+<p style="color:skyblue;"> CNMI Sustainable Fashion Awards 2022</p>
+<p style="color:#EA88C0;" >Kering Award for Sustainable Fashion 2022</p>
+
+
+<p style="color:skyblue;">Here at Blazerette, we strive to create affordable, sustainable clothing for all body types.</p>
+
+<p style="color:skyblue;">How do we do it?
+We collect all of our fabric second-hand, so every item is unique, sustainable, and stylish!</p>
+
+<h1 style="color:#EA88C0;">Our goals for the future</h1>
+
+<p style="color:skyblue;"> We hope to expand our business by investing in fabrics made from recycled material and more production space.<p>
+  <p style="color:skyblue;">Sustainability is expensive. In order to make our products as affordable as possible, we use second-hand fabrics.<p>
+<p style="color:skyblue;"> We strive for size inclusivity and currently offer size XS-4XL <p>
+
+
+
+<img src="thumbnail_BlazeretteLogo.jpg" width="400", height="175">
+
+</article>
+
+</section>
+
+<footer>
+
+<p>Thanks for shopping with us!</p>
+
+<p>&copy 2022 Blazerette</p>
+
+</footer>
+
+</body>
+
+</html>

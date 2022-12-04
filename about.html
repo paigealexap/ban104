@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+background-color: #666;
+padding: 30px;
+text-align: center;
+font-size: 35px;
+color: purple;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+float: left;
+width: 30%;
+height: 400px; /* only for demonstration, should be removed */
+background: #ccc;
+padding: 20px;
+}
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+article {
+float: left;
+padding: 20px;
+width: 70%;
+background-color: purple;
+height: 700px; /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the footer */
+
+footer {
+
+background-color: #777;
+
+padding: 10px;
+
+text-align: center;
+
+color: pink;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h3>Blazerette&copy;</h3>
+
+</header>
+
+<section>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">Who We Are</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="awards.html">Awards</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</nav>
+
+<article>
+
+<h1 style="color:#EA88C0;">Who We Are</h1>
+
+<p style="color:skyblue;">Blazerette is a fashion-forward brand and style community who purpose is to create confidence and inspire self-expression to women in the business world. From blazers to loafers, Blazerette designs clothes for real-life versatility. At Blazerette, we strive to create affordable, sustainably made garments..</p>
+
+<h2 style="color:#EA88C0;">Real-Life Versitility</h2>
+
+<p style="color:skyblue;">Our clothing is an edit of the top trends to create a modern, sleek, and flexible wardrobe. Each design is designed to help you express your fashion style. We strive for size inclusivity and currently offer sizes from XS-4XL.</p>
+
+<h3 style="color:#EA88C0;">Hear From Our Staff and Customers</h3>
+
+<p style="color:skyblue;"> "It's so inspiring to design with our customers to create exactly what they want to wear. I love that I am able to collaborate with numerous customers to help them secure that job interview, or that important department meeting." - Erika S., VP of Design <p>
+
+<p style="color:skyblue;"> "It was so easy and so much fun to be a part of this process. I love the clothing style that Erin sent me!" -Alexandra M <p>
+
+<img src="thumbnail_BlazeretteLogo.jpg" width="400", height="175">
+
+</article>
+
+</section>
+
+<footer>
+
+<p>Thanks for shopping with us!</p>
+
+<p>&copy 2022 Blazerette</p>
+
+</footer>
+
+</body>
+
+</html>

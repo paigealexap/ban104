@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>CSS Template</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+
+box-sizing: border-box;
+
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+
+header {
+
+background-color: #666;
+
+padding: 30px;
+
+text-align: center;
+
+font-size: 35px;
+
+color: purple;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+
+float: left;
+
+width: 30%;
+
+height: 300px; /* only for demonstration, should be removed */
+
+background: #ccc;
+
+padding: 20px;
+
+}
+
+/* Style the list inside the menu */
+
+nav ul {
+
+list-style-type: none;
+
+padding: 0;
+
+}
+
+article {
+
+float: left;
+
+padding: 20px;
+
+width: 70%;
+
+background-color: purple;
+
+height: 4000px; /* only for demonstration, should be removed */
+
+}
+
+/* Clear floats after the columns */
+
+section::after {
+
+content: "";
+
+display: table;
+
+clear: both;
+
+}
+
+/* Style the footer */
+
+footer {
+
+background-color: #777;
+
+padding: 10px;
+
+text-align: center;
+
+color: pink;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+
+nav, article {
+
+width: 100%;
+
+height: auto;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+<h3>Blazerette&copy;</h3>
+
+</header>
+
+<section>
+
+<nav>
+
+<ul>
+
+<li><a href="about.html">Who We Are</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="awards.html">Awards</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</nav>
+
+<article>
+<h1 style="color:pink;"> Products</h1>
+
+<p style="color:skyblue;">Beige Blazer</p>
+<img src="blazer.jpeg" width="250", height="300">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">Green Blazer</p>
+<img src="GreenBlazer.jpeg" width="315", height="315">
+<h1 style="color:pink;">$45 for all sizes</h1>
+
+<p style="color:skyblue;">Satin Beige Blazer</p>
+<img src="GreenBlazer.jpeg" width="315", height="315">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">Green Blouse<p>
+<img src="GreenBlouse.jpeg" width="250", height="300">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">White Blouse<p>
+<img src="WhiteShirt.jpeg" width="200", height="300">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">Beige Pants<p>
+<img src="BeigePants.jpeg" width="200", height="300">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">Black Pants<p>
+<img src="BlackPants.jpeg" width="200", height="300">
+<p style="color:pink;">$45 for all sizes</p>
+
+<p style="color:skyblue;">Beige Loafers<p>
+<img src="BeigeLoffers.jpeg" width="200", height="300">
+<p style="color:pink;">$35 for all sizes</p>
+
+<p style="color:skyblue;">Black Loafers<p>
+<img src="BlackLoffers.jpeg" width="200", height="300">
+<p style="color:pink;">$35 for all sizes</p>
+</article>
+
+</section>
+
+<footer>
+
+<p>Thanks for shopping with us!</p>
+
+</footer>
+
+</body>
+
+</html>
